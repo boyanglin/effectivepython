@@ -64,4 +64,4 @@ print(longest_name)
 # @pyl: names and letters have different length
 names.append('Rosalind')
 for name, count in zip(names, letters):
-    print(name)
+    print('%s: %d' % (name, count))

@@ -47,3 +47,7 @@ roots = ((x, x**0.5) for x in it)
 
 # Example 5
 print(next(roots))
+
+#@pyl
+roots_alt = {x:x**0.5 for x in it}
+print(roots_alt)

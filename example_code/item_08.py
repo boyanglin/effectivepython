@@ -22,8 +22,10 @@ from sys import stdout as STDOUT
 
 # Example 1
 matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-flat = [x for row in matrix for x in row]
-print(flat)
+flat_1 = [x for row in matrix for x in row]
+# flat_2 = [x for x in row for row in matrix ] # NameError: name 'row' is not defined
+print(flat_1)
+# print(flat_2)
 
 
 # Example 2

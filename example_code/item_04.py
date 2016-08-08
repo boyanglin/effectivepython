@@ -42,6 +42,10 @@ print('Red:     %r' % red)
 print('Green:   %r' % green)
 print('Opacity: %r' % opacity)
 
+#my_example 3
+# what if there are two identical keys
+my_values_2 = parse_qs('red=5&blue=0&green=&red=13', keep_blank_values = True)
+red_2 = my_values_2.get('red')  # red_2 = ['5', '13']
 
 # Example 4
 red = int(my_values.get('red', [''])[0] or 0)

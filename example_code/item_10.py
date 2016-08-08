@@ -24,8 +24,10 @@ from sys import stdout as STDOUT
 from random import randint
 random_bits = 0
 for i in range(64):
+    print('i: %d' % i)
     if randint(0, 1):
         random_bits |= 1 << i
+        print(random_bits)
 print(bin(random_bits))
 
 
